@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from static.data import SHOW
+from data import SHOW
 
 app = Flask(__name__)
 
