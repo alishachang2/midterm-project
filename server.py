@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify
+from static.data import SHOW
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def home():
