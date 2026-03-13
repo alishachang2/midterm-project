@@ -1,6 +1,4 @@
-print("Loading show data from static/data.py...")
-SHOW =[
-    {
+{
   "reality_tv_shows": [
     {
       "id": 1,
@@ -11,17 +9,17 @@ SHOW =[
       "premiere_date": "January 8, 2026",
       "host": "Alan Cumming",
       "notable_cast": [
-        "Rob Rausch",
-        "Lisa Rinna",
-        "Maura Higgins",
-        "Donna Kelce",
-        "Porsha Williams",
-        "Michael Rapaport",
-        "Dorinda Medley",
-        "Colton Underwood",
-        "Monét X Change",
-        "Johnny Weir",
-        "Tara Lipinski"
+        { "name": "Rob Rausch", "related_show": "Love Island USA", "related_show_id": null },
+        { "name": "Lisa Rinna", "related_show": "Real Housewives of Beverly Hills", "related_show_id": null },
+        { "name": "Maura Higgins", "related_show": "Love Island USA", "related_show_id": null },
+        { "name": "Donna Kelce", "related_show": null, "related_show_id": null },
+        { "name": "Porsha Williams", "related_show": "The Real Housewives of Atlanta", "related_show_id": 8 },
+        { "name": "Michael Rapaport", "related_show": null, "related_show_id": null },
+        { "name": "Dorinda Medley", "related_show": "The Real Housewives of New York City", "related_show_id": 4 },
+        { "name": "Colton Underwood", "related_show": "The Bachelor", "related_show_id": null },
+        { "name": "Monét X Change", "related_show": "RuPaul's Drag Race", "related_show_id": null },
+        { "name": "Johnny Weir", "related_show": null, "related_show_id": null },
+        { "name": "Tara Lipinski", "related_show": null, "related_show_id": null }
       ],
       "rating": 5,
       "genre": ["competition", "mystery", "strategy"],
@@ -31,7 +29,7 @@ SHOW =[
       "similar_show_ids": [2, 3, 7],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/The_Traitors_US_S4_poster.jpg",
-        "alt": "Official promotional poster for The Traitors Season 4 on Peacock, featuring the 23-person celebrity cast dressed in elegant attire gathered inside the dimly lit Scottish Highlands castle, with Alan Cumming in a dramatic tartan suit at the center"
+        "alt": "Official promotional poster for The Traitors Season 4 on Peacock"
       }
     },
     {
@@ -43,11 +41,11 @@ SHOW =[
       "premiere_date": "February 28, 2024",
       "host": "Jeff Probst",
       "notable_cast": [
-        "Kenzie Petty",
-        "Charlie Davis",
-        "Maria Shrime Gonzalez",
-        "Q Burdette",
-        "Ben Katzman"
+        { "name": "Kenzie Petty", "related_show": null, "related_show_id": null },
+        { "name": "Charlie Davis", "related_show": null, "related_show_id": null },
+        { "name": "Maria Shrime Gonzalez", "related_show": null, "related_show_id": null },
+        { "name": "Q Burdette", "related_show": null, "related_show_id": null },
+        { "name": "Ben Katzman", "related_show": null, "related_show_id": null }
       ],
       "rating": 4,
       "genre": ["competition", "strategy", "survival"],
@@ -57,7 +55,7 @@ SHOW =[
       "similar_show_ids": [1, 3, 5],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/9/96/Survivor46logo.png",
-        "alt": "The Survivor Season 46 logo set against a tropical Fijian backdrop with the iconic torch and flame, representing the show's enduring theme of survival and competition"
+        "alt": "The Survivor Season 46 logo"
       }
     },
     {
@@ -69,11 +67,11 @@ SHOW =[
       "premiere_date": "July 17, 2024",
       "host": "Julie Chen Moonves",
       "notable_cast": [
-        "Chelsie Baham",
-        "Rubina Bernabe",
-        "Tucker Des Lauriers",
-        "Makensy Manbeck",
-        "Joseph Rodriguez"
+        { "name": "Chelsie Baham", "related_show": null, "related_show_id": null },
+        { "name": "Rubina Bernabe", "related_show": null, "related_show_id": null },
+        { "name": "Tucker Des Lauriers", "related_show": null, "related_show_id": null },
+        { "name": "Makensy Manbeck", "related_show": null, "related_show_id": null },
+        { "name": "Joseph Rodriguez", "related_show": null, "related_show_id": null }
       ],
       "rating": 4,
       "genre": ["competition", "strategy", "social experiment"],
@@ -83,7 +81,7 @@ SHOW =[
       "similar_show_ids": [1, 2, 7],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Big_Brother_Season_26.jpg",
-        "alt": "The Big Brother Season 26 logo featuring the iconic eye motif in bold neon against a dark background, symbolizing constant surveillance inside the Big Brother house"
+        "alt": "The Big Brother Season 26 logo"
       }
     },
     {
@@ -95,12 +93,12 @@ SHOW =[
       "premiere_date": "July 16, 2023",
       "host": "Andy Cohen",
       "notable_cast": [
-        "Jessel Taank",
-        "Erin Dana Lichy",
-        "Ubah Hassan",
-        "Sai De Silva",
-        "Brynn Whitfield",
-        "Jenna Lyons"
+        { "name": "Jessel Taank", "related_show": null, "related_show_id": null },
+        { "name": "Erin Dana Lichy", "related_show": null, "related_show_id": null },
+        { "name": "Ubah Hassan", "related_show": null, "related_show_id": null },
+        { "name": "Sai De Silva", "related_show": null, "related_show_id": null },
+        { "name": "Brynn Whitfield", "related_show": null, "related_show_id": null },
+        { "name": "Jenna Lyons", "related_show": null, "related_show_id": null }
       ],
       "rating": 3,
       "genre": ["lifestyle", "drama", "docuseries"],
@@ -110,7 +108,7 @@ SHOW =[
       "similar_show_ids": [6, 8, 10],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/0/07/RHONY_Season_15.jpg",
-        "alt": "The Real Housewives of New York City Season 15 promotional image showing the new cast of women dressed glamorously against the Manhattan skyline at night"
+        "alt": "The Real Housewives of New York City Season 15 promotional image"
       }
     },
     {
@@ -122,11 +120,11 @@ SHOW =[
       "premiere_date": "March 13, 2024",
       "host": "Phil Keoghan",
       "notable_cast": [
-        "Derek Xiao",
-        "Claire Rehfuss",
-        "Juan Villa",
-        "Shane Bilek",
-        "Lena Wiedner"
+        { "name": "Derek Xiao", "related_show": "Big Brother", "related_show_id": 3 },
+        { "name": "Claire Rehfuss", "related_show": "Big Brother", "related_show_id": 3 },
+        { "name": "Juan Villa", "related_show": null, "related_show_id": null },
+        { "name": "Shane Bilek", "related_show": null, "related_show_id": null },
+        { "name": "Lena Wiedner", "related_show": null, "related_show_id": null }
       ],
       "rating": 4,
       "genre": ["competition", "travel", "adventure"],
@@ -136,7 +134,7 @@ SHOW =[
       "similar_show_ids": [2, 3, 7],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/8/8d/The_Amazing_Race_Season_36_poster.jpg",
-        "alt": "The Amazing Race Season 36 key art featuring racing teams mid-sprint against a colorful world map collage, capturing the global adventure and competitive energy of the show"
+        "alt": "The Amazing Race Season 36 key art"
       }
     },
     {
@@ -148,12 +146,12 @@ SHOW =[
       "premiere_date": "January 30, 2024",
       "host": "Andy Cohen",
       "notable_cast": [
-        "Tom Sandoval",
-        "Ariana Madix",
-        "Tom Schwartz",
-        "Katie Maloney",
-        "Scheana Shay",
-        "Lala Kent"
+        { "name": "Tom Sandoval", "related_show": null, "related_show_id": null },
+        { "name": "Ariana Madix", "related_show": null, "related_show_id": null },
+        { "name": "Tom Schwartz", "related_show": null, "related_show_id": null },
+        { "name": "Katie Maloney", "related_show": null, "related_show_id": null },
+        { "name": "Scheana Shay", "related_show": null, "related_show_id": null },
+        { "name": "Lala Kent", "related_show": null, "related_show_id": null }
       ],
       "rating": 4,
       "genre": ["lifestyle", "drama", "docuseries"],
@@ -163,7 +161,7 @@ SHOW =[
       "similar_show_ids": [4, 8, 10],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/7/79/Vanderpump_Rules_title_card.jpg",
-        "alt": "The Vanderpump Rules Season 11 promotional poster featuring the cast posed glamorously outside SUR restaurant in West Hollywood, with bold pink and gold typography"
+        "alt": "The Vanderpump Rules Season 11 promotional poster"
       }
     },
     {
@@ -175,11 +173,11 @@ SHOW =[
       "premiere_date": "March 8, 2024",
       "host": "Alex Wagner",
       "notable_cast": [
-        "Avori Henderson",
-        "Casey Walker",
-        "Greg Shapiro",
-        "Jacob Hacker",
-        "Melissa Roth"
+        { "name": "Avori Henderson", "related_show": null, "related_show_id": null },
+        { "name": "Casey Walker", "related_show": null, "related_show_id": null },
+        { "name": "Greg Shapiro", "related_show": null, "related_show_id": null },
+        { "name": "Jacob Hacker", "related_show": null, "related_show_id": null },
+        { "name": "Melissa Roth", "related_show": null, "related_show_id": null }
       ],
       "rating": 4,
       "genre": ["competition", "mystery", "strategy"],
@@ -189,7 +187,7 @@ SHOW =[
       "similar_show_ids": [1, 2, 3],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Mole_2024_Netflix_poster.jpg",
-        "alt": "Netflix's The Mole Season 2 promotional image featuring contestants in silhouette looking at a magnifying glass, representing the central mystery of identifying the saboteur among the group"
+        "alt": "Netflix's The Mole Season 2 promotional image"
       }
     },
     {
@@ -201,12 +199,12 @@ SHOW =[
       "premiere_date": "May 5, 2024",
       "host": "Andy Cohen",
       "notable_cast": [
-        "Kenya Moore",
-        "Kandi Burruss",
-        "Shereé Whitfield",
-        "Marlo Hampton",
-        "Lisa Wu",
-        "Courtney Rhodes"
+        { "name": "Kenya Moore", "related_show": null, "related_show_id": null },
+        { "name": "Kandi Burruss", "related_show": null, "related_show_id": null },
+        { "name": "Shereé Whitfield", "related_show": null, "related_show_id": null },
+        { "name": "Marlo Hampton", "related_show": null, "related_show_id": null },
+        { "name": "Lisa Wu", "related_show": null, "related_show_id": null },
+        { "name": "Courtney Rhodes", "related_show": null, "related_show_id": null }
       ],
       "rating": 3,
       "genre": ["lifestyle", "drama", "docuseries"],
@@ -216,7 +214,7 @@ SHOW =[
       "similar_show_ids": [4, 6, 10],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/9/97/The_Real_Housewives_of_Atlanta_Season_16.jpg",
-        "alt": "The Real Housewives of Atlanta Season 16 cast photo featuring the women in designer gowns posed against a dramatic Atlanta cityscape backdrop at golden hour"
+        "alt": "The Real Housewives of Atlanta Season 16 cast photo"
       }
     },
     {
@@ -228,12 +226,12 @@ SHOW =[
       "premiere_date": "October 2, 2024",
       "host": "Nick Lachey & Vanessa Lachey",
       "notable_cast": [
-        "Hannah Jiles",
-        "Nick Dorka",
-        "Ramses Prashad",
-        "Marissa George",
-        "Stephen Nesbit",
-        "Taylor Krause"
+        { "name": "Hannah Jiles", "related_show": null, "related_show_id": null },
+        { "name": "Nick Dorka", "related_show": null, "related_show_id": null },
+        { "name": "Ramses Prashad", "related_show": null, "related_show_id": null },
+        { "name": "Marissa George", "related_show": null, "related_show_id": null },
+        { "name": "Stephen Nesbit", "related_show": null, "related_show_id": null },
+        { "name": "Taylor Krause", "related_show": null, "related_show_id": null }
       ],
       "rating": 4,
       "genre": ["romance", "social experiment", "competition"],
@@ -243,7 +241,7 @@ SHOW =[
       "similar_show_ids": [4, 6, 10],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/4/4f/Love_Is_Blind_Season_7.jpg",
-        "alt": "Love Is Blind Season 7 promotional image showing two silhouetted figures reaching toward each other through a glowing pod wall, representing the show's core concept of emotional connection without physical sight"
+        "alt": "Love Is Blind Season 7 promotional image"
       }
     },
     {
@@ -255,12 +253,12 @@ SHOW =[
       "premiere_date": "June 2, 2024",
       "host": "Andy Cohen",
       "notable_cast": [
-        "Chanel Ayan",
-        "Caroline Brooks",
-        "Nina Ali",
-        "Sara Al Madani",
-        "Caroline Stanbury",
-        "Lesa Milan"
+        { "name": "Chanel Ayan", "related_show": null, "related_show_id": null },
+        { "name": "Caroline Brooks", "related_show": null, "related_show_id": null },
+        { "name": "Nina Ali", "related_show": null, "related_show_id": null },
+        { "name": "Sara Al Madani", "related_show": null, "related_show_id": null },
+        { "name": "Caroline Stanbury", "related_show": "The Traitors", "related_show_id": 1 },
+        { "name": "Lesa Milan", "related_show": null, "related_show_id": null }
       ],
       "rating": 3,
       "genre": ["lifestyle", "drama", "docuseries"],
@@ -270,9 +268,8 @@ SHOW =[
       "similar_show_ids": [4, 6, 8],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/en/7/74/Real_Housewives_of_Dubai_Season_2.jpg",
-        "alt": "The Real Housewives of Dubai Season 2 cast standing in glamorous designer outfits against the Dubai skyline featuring the Burj Khalifa, showcasing the show's signature blend of luxury and international drama"
+        "alt": "The Real Housewives of Dubai Season 2 cast"
       }
     }
   ]
 }
-]

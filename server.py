@@ -1,10 +1,26 @@
-from flask import Flask, render_template, request, jsonify
-from data import SHOW
+#import os module
+import os
+
+#import flask
+from flask import Flask, url_for
+
+#import template engine
+from flask import render_template
+from flask import json
 
 app = Flask(__name__)
 
+#import data
+filename = os.path.join(app.static_folder, 'data.json')
+with open(filename) as shows_data:
+    shows = json.load(shows_data)
 
-@app.route("/")
+#show all shows route
+# @app.route("/shows")
+# def show_all_shows():
+#     global shows
+#     return render_template('shows.html', shows=shows)
+
 def home():
     return render_template('index.html')
 
