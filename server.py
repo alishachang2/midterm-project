@@ -25,5 +25,13 @@ with open(filename) as shows_data:
 def home():
     return render_template('index.html', shows=shows)
 
+@app.route("/show/<int:id>")
+def show_page(id):
+    show = next((s for s in shows if s['id'] == id), None)
+    if show is None:
+        return "Show not found", 404
+    return render_template('show_page.html', show=show)
+
+
 if __name__ == "__main__":
     app.run(debug=True)

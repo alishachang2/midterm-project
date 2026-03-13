@@ -1,273 +1,252 @@
 [
-    {
-      "id": 1,
-      "title": "The Traitors",
-      "season": 4,
-      "network": "Peacock",
-      "year": 2026,
-      "premiere_date": "January 8, 2026",
-      "host": "Alan Cumming",
-      "notable_cast": [
-        { "name": "Rob Rausch", "related_show": "Love Island USA", "related_show_id": null },
-        { "name": "Lisa Rinna", "related_show": "Real Housewives of Beverly Hills", "related_show_id": null },
-        { "name": "Maura Higgins", "related_show": "Love Island USA", "related_show_id": null },
-        { "name": "Donna Kelce", "related_show": null, "related_show_id": null },
-        { "name": "Porsha Williams", "related_show": "The Real Housewives of Atlanta", "related_show_id": 8 },
-        { "name": "Michael Rapaport", "related_show": null, "related_show_id": null },
-        { "name": "Dorinda Medley", "related_show": "The Real Housewives of New York City", "related_show_id": 4 },
-        { "name": "Colton Underwood", "related_show": "The Bachelor", "related_show_id": null },
-        { "name": "Monét X Change", "related_show": "RuPaul's Drag Race", "related_show_id": null },
-        { "name": "Johnny Weir", "related_show": null, "related_show_id": null },
-        { "name": "Tara Lipinski", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 5,
-      "genre": ["competition", "mystery", "strategy"],
-      "summary": "The Emmy Award-winning series returns for its most star-studded season yet, packing 23 celebrities into a hauntingly beautiful Scottish Highlands castle for the ultimate game of deception. A secret group of 'Traitors' — including a hidden 'Secret Traitor' wearing a red cloak — works to eliminate the loyal 'Faithfuls' through nightly murders, while the Faithfuls attempt to expose and banish the Traitors through dramatic roundtable votes. Season 4 introduces a wild new Secret Traitor twist: a fourth Traitor selected before the game even begins, who operates independently and doesn't know the other Traitors' identities. With Housewives, Olympians, Survivor legends, and pop culture icons all vying for $250,000, alliances shatter and no one is safe.",
-      "episodes": 11,
-      "status": "Airing",
-      "similar_show_ids": [2, 3, 7],
-      "image": {
-        "url": "https://assets.newsweek.com/wp-content/uploads/2025/11/nup_203278_00001-1.jpg?w=1600&quality=80&webp=1",
-        "alt": "Official promotional poster for The Traitors Season 4 on Peacock"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Survivor",
-      "season": 46,
-      "network": "CBS",
-      "year": 2024,
-      "premiere_date": "February 28, 2024",
-      "host": "Jeff Probst",
-      "notable_cast": [
-        { "name": "Kenzie Petty", "related_show": null, "related_show_id": null },
-        { "name": "Charlie Davis", "related_show": null, "related_show_id": null },
-        { "name": "Maria Shrime Gonzalez", "related_show": null, "related_show_id": null },
-        { "name": "Q Burdette", "related_show": null, "related_show_id": null },
-        { "name": "Ben Katzman", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 4,
-      "genre": ["competition", "strategy", "survival"],
-      "summary": "One of the longest-running reality competition shows in television history, Survivor drops a new group of castaways on a remote island where they must outwit, outplay, and outlast one another to claim the $1 million prize. Season 46 returns to the iconic Fijian islands, pushing contestants to their physical and mental limits through intense tribal challenges, blindsides, and social manipulation. Alliances shift constantly as players navigate the game's signature twists and tribal council eliminations.",
-      "episodes": 13,
-      "status": "Completed",
-      "similar_show_ids": [1, 3, 5],
-      "image": {
-        "url": "https://i.ytimg.com/vi/kzYf25mDlwk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmfdNF2Eg0QiSls0O2uBI3o-X3Zw",
-        "alt": "The Survivor Season 46 logo"
-      }
-    },
-    {
-      "id": 3,
-      "title": "Big Brother",
-      "season": 26,
-      "network": "CBS",
-      "year": 2024,
-      "premiere_date": "July 17, 2024",
-      "host": "Julie Chen Moonves",
-      "notable_cast": [
-        { "name": "Chelsie Baham", "related_show": null, "related_show_id": null },
-        { "name": "Rubina Bernabe", "related_show": null, "related_show_id": null },
-        { "name": "Tucker Des Lauriers", "related_show": null, "related_show_id": null },
-        { "name": "Makensy Manbeck", "related_show": null, "related_show_id": null },
-        { "name": "Joseph Rodriguez", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 4,
-      "genre": ["competition", "strategy", "social experiment"],
-      "summary": "Big Brother places a group of strangers together in a custom-built house outfitted with cameras in every room, broadcasting their every move 24/7. Contestants compete in Head of Household and Power of Veto competitions to gain safety and control nominations, while forming strategic alliances and social bonds. Each week, houseguests vote one of their own out of the house, until a final two or three face the jury for the $750,000 prize. Season 26 introduced an AI twist called 'AI Arena' that dramatically changed the power structure.",
-      "episodes": 38,
-      "status": "Completed",
-      "similar_show_ids": [1, 2, 7],
-      "image": {
-        "url": "https://wwwimage-us.pplusstatic.com/base/files/seo/31/09/97/d4484965-5bc1-4010-8bc0-9c8b1abce928.jpg?format=webp",
-        "alt": "The Big Brother Season 26 logo"
-      }
-    },
-    {
-      "id": 4,
-      "title": "The Real Housewives of New York City",
-      "season": 15,
-      "network": "Bravo",
-      "year": 2023,
-      "premiere_date": "July 16, 2023",
-      "host": "Andy Cohen",
-      "notable_cast": [
-        { "name": "Jessel Taank", "related_show": null, "related_show_id": null },
-        { "name": "Erin Dana Lichy", "related_show": null, "related_show_id": null },
-        { "name": "Ubah Hassan", "related_show": null, "related_show_id": null },
-        { "name": "Sai De Silva", "related_show": null, "related_show_id": null },
-        { "name": "Brynn Whitfield", "related_show": null, "related_show_id": null },
-        { "name": "Jenna Lyons", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 3,
-      "genre": ["lifestyle", "drama", "docuseries"],
-      "summary": "The rebooted 15th season of The Real Housewives of New York City follows a fresh ensemble of powerful, stylish New York women navigating friendship, business ventures, romance, and relentless drama across the city's most exclusive social circles. With an entirely new cast introduced for the reboot, viewers follow the women through glitzy events, shocking confrontations, and deeply personal revelations. The season culminates in a no-holds-barred reunion special where past feuds and unresolved conflicts collide.",
-      "episodes": 18,
-      "status": "Completed",
-      "similar_show_ids": [6, 8, 10],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/0/07/RHONY_Season_15.jpg",
-        "alt": "The Real Housewives of New York City Season 15 promotional image"
-      }
-    },
-    {
-      "id": 5,
-      "title": "The Amazing Race",
-      "season": 36,
-      "network": "CBS",
-      "year": 2024,
-      "premiere_date": "March 13, 2024",
-      "host": "Phil Keoghan",
-      "notable_cast": [
-        { "name": "Derek Xiao", "related_show": "Big Brother", "related_show_id": 3 },
-        { "name": "Claire Rehfuss", "related_show": "Big Brother", "related_show_id": 3 },
-        { "name": "Juan Villa", "related_show": null, "related_show_id": null },
-        { "name": "Shane Bilek", "related_show": null, "related_show_id": null },
-        { "name": "Lena Wiedner", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 4,
-      "genre": ["competition", "travel", "adventure"],
-      "summary": "Teams of two race across the globe, navigating foreign cultures, languages, and landscapes while completing physically demanding and mentally taxing challenges at each pit stop. The last team to check in at each leg risks elimination, while Express Passes and Speed Bumps add strategic layers to the competition. Season 36 takes racers through stunning destinations across four continents, testing relationships and individual resilience in equal measure. The first team to reach the final mat wins $1 million.",
-      "episodes": 11,
-      "status": "Completed",
-      "similar_show_ids": [2, 3, 7],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/8/8d/The_Amazing_Race_Season_36_poster.jpg",
-        "alt": "The Amazing Race Season 36 key art"
-      }
-    },
-    {
-      "id": 6,
-      "title": "Vanderpump Rules",
-      "season": 11,
-      "network": "Bravo",
-      "year": 2024,
-      "premiere_date": "January 30, 2024",
-      "host": "Andy Cohen",
-      "notable_cast": [
-        { "name": "Tom Sandoval", "related_show": null, "related_show_id": null },
-        { "name": "Ariana Madix", "related_show": null, "related_show_id": null },
-        { "name": "Tom Schwartz", "related_show": null, "related_show_id": null },
-        { "name": "Katie Maloney", "related_show": null, "related_show_id": null },
-        { "name": "Scheana Shay", "related_show": null, "related_show_id": null },
-        { "name": "Lala Kent", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 4,
-      "genre": ["lifestyle", "drama", "docuseries"],
-      "summary": "Set in the glitzy world of Lisa Vanderpump's West Hollywood restaurant empire, Vanderpump Rules follows the dramatic personal and professional lives of the SUR restaurant staff. Season 11 picks up in the aftermath of the explosive 'Scandoval' affair storyline that took over pop culture, continuing to follow Tom Sandoval and Ariana Madix's post-breakup dynamic alongside their group of longtime friends. New cast additions inject fresh drama as the veterans attempt to rebuild — or burn down — their relationships.",
-      "episodes": 12,
-      "status": "Completed",
-      "similar_show_ids": [4, 8, 10],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/7/79/Vanderpump_Rules_title_card.jpg",
-        "alt": "The Vanderpump Rules Season 11 promotional poster"
-      }
-    },
-    {
-      "id": 7,
-      "title": "The Mole",
-      "season": 2,
-      "network": "Netflix",
-      "year": 2024,
-      "premiere_date": "March 8, 2024",
-      "host": "Alex Wagner",
-      "notable_cast": [
-        { "name": "Avori Henderson", "related_show": null, "related_show_id": null },
-        { "name": "Casey Walker", "related_show": null, "related_show_id": null },
-        { "name": "Greg Shapiro", "related_show": null, "related_show_id": null },
-        { "name": "Jacob Hacker", "related_show": null, "related_show_id": null },
-        { "name": "Melissa Roth", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 4,
-      "genre": ["competition", "mystery", "strategy"],
-      "summary": "The Mole is a gripping mystery-competition hybrid in which contestants work together on missions to build a group prize pot — but one player secretly sabotages the group as 'The Mole.' Players must gather clues, suspect their teammates, and correctly identify The Mole to avoid elimination and ultimately win the prize. Netflix's revival of the classic early-2000s format brings back the paranoia-fueled gameplay with an updated cast of civilians navigating stunning international locations. Every alliance is suspect, and anyone could be deceiving the group.",
-      "episodes": 10,
-      "status": "Completed",
-      "similar_show_ids": [1, 2, 3],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Mole_2024_Netflix_poster.jpg",
-        "alt": "Netflix's The Mole Season 2 promotional image"
-      }
-    },
-    {
-      "id": 8,
-      "title": "The Real Housewives of Atlanta",
-      "season": 16,
-      "network": "Bravo",
-      "year": 2024,
-      "premiere_date": "May 5, 2024",
-      "host": "Andy Cohen",
-      "notable_cast": [
-        { "name": "Kenya Moore", "related_show": null, "related_show_id": null },
-        { "name": "Kandi Burruss", "related_show": null, "related_show_id": null },
-        { "name": "Shereé Whitfield", "related_show": null, "related_show_id": null },
-        { "name": "Marlo Hampton", "related_show": null, "related_show_id": null },
-        { "name": "Lisa Wu", "related_show": null, "related_show_id": null },
-        { "name": "Courtney Rhodes", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 3,
-      "genre": ["lifestyle", "drama", "docuseries"],
-      "summary": "The Real Housewives of Atlanta follows a group of fiercely independent and fabulously wealthy women living their best lives — and worst fights — in the heart of Atlanta. Season 16 reunites legacy cast members with fresh faces, delivering a season full of lavish parties, business drama, romantic entanglements, and the show's trademark explosive confrontations. Personal revelations and long-held grudges explode across both dramatic girls' trips and the iconic multi-part reunion hosted by Andy Cohen.",
-      "episodes": 20,
-      "status": "Completed",
-      "similar_show_ids": [4, 6, 10],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/9/97/The_Real_Housewives_of_Atlanta_Season_16.jpg",
-        "alt": "The Real Housewives of Atlanta Season 16 cast photo"
-      }
-    },
-    {
-      "id": 9,
-      "title": "Love Is Blind",
-      "season": 7,
-      "network": "Netflix",
-      "year": 2024,
-      "premiere_date": "October 2, 2024",
-      "host": "Nick Lachey & Vanessa Lachey",
-      "notable_cast": [
-        { "name": "Hannah Jiles", "related_show": null, "related_show_id": null },
-        { "name": "Nick Dorka", "related_show": null, "related_show_id": null },
-        { "name": "Ramses Prashad", "related_show": null, "related_show_id": null },
-        { "name": "Marissa George", "related_show": null, "related_show_id": null },
-        { "name": "Stephen Nesbit", "related_show": null, "related_show_id": null },
-        { "name": "Taylor Krause", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 4,
-      "genre": ["romance", "social experiment", "competition"],
-      "summary": "Love Is Blind poses a radical question: can you fall in love with someone you've never seen? Contestants meet and date in isolated pods where they can only hear — never see — one another, and must decide whether to get engaged before ever laying eyes on their partner. Season 7 returns to Washington D.C., following couples as they navigate the real world together after engagement, meeting each other's families, and ultimately deciding at the altar whether to say 'I do' or walk away. Emotions run high as love, doubt, and social pressures collide.",
-      "episodes": 11,
-      "status": "Completed",
-      "similar_show_ids": [4, 6, 10],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/4/4f/Love_Is_Blind_Season_7.jpg",
-        "alt": "Love Is Blind Season 7 promotional image"
-      }
-    },
-    {
-      "id": 10,
-      "title": "The Real Housewives of Dubai",
-      "season": 2,
-      "network": "Bravo",
-      "year": 2024,
-      "premiere_date": "June 2, 2024",
-      "host": "Andy Cohen",
-      "notable_cast": [
-        { "name": "Chanel Ayan", "related_show": null, "related_show_id": null },
-        { "name": "Caroline Brooks", "related_show": null, "related_show_id": null },
-        { "name": "Nina Ali", "related_show": null, "related_show_id": null },
-        { "name": "Sara Al Madani", "related_show": null, "related_show_id": null },
-        { "name": "Caroline Stanbury", "related_show": "The Traitors", "related_show_id": 1 },
-        { "name": "Lesa Milan", "related_show": null, "related_show_id": null }
-      ],
-      "rating": 3,
-      "genre": ["lifestyle", "drama", "docuseries"],
-      "summary": "The Real Housewives of Dubai brings the iconic Housewives franchise to the world's most opulent city, following an international ensemble of powerhouse women who have made Dubai their home. Season 2 ramps up the glitz and drama, with the cast jetting between jaw-dropping mansions, world-class events, and exotic international destinations. Supermodel Chanel Ayan leads a cast that blends fierce ambition with genuine friendship — and bitter rivalries — against the backdrop of Dubai's extraordinary skyline and ultra-luxury lifestyle.",
-      "episodes": 14,
-      "status": "Completed",
-      "similar_show_ids": [4, 6, 8],
-      "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/7/74/Real_Housewives_of_Dubai_Season_2.jpg",
-        "alt": "The Real Housewives of Dubai Season 2 cast"
-      }
+  {
+    "id": 1,
+    "title": "The Traitors",
+    "season": 4,
+    "network": "Peacock",
+    "year": 2026,
+    "premiere_date": "January 8, 2026",
+    "host": "Alan Cumming",
+    "notable_cast": [
+      { "name": "Porsha Williams", "related_show": "The Real Housewives of Atlanta", "related_show_id": 8, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Porsha_Williams_2014.jpg/440px-Porsha_Williams_2014.jpg" },
+      { "name": "Dorinda Medley", "related_show": "The Real Housewives of New York City", "related_show_id": 4, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Dorinda_Medley_2019_cropped.jpg/440px-Dorinda_Medley_2019_cropped.jpg" },
+      { "name": "Lisa Rinna", "related_show": "Real Housewives of Beverly Hills", "related_show_id": null, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lisa_Rinna_2011.jpg/440px-Lisa_Rinna_2011.jpg" },
+      { "name": "Maura Higgins", "related_show": "Love Island USA", "related_show_id": null, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Maura_Higgins_2019.jpg/440px-Maura_Higgins_2019.jpg" }
+    ],
+    "rating": 5,
+    "genre": ["competition", "mystery", "strategy"],
+    "summary": "The Emmy Award-winning series returns for its most star-studded season yet, packing 23 celebrities into a hauntingly beautiful Scottish Highlands castle for the ultimate game of deception. A secret group of 'Traitors' — including a hidden 'Secret Traitor' wearing a red cloak — works to eliminate the loyal 'Faithfuls' through nightly murders, while the Faithfuls attempt to expose and banish the Traitors through dramatic roundtable votes. Season 4 introduces a wild new Secret Traitor twist: a fourth Traitor selected before the game even begins, who operates independently and doesn't know the other Traitors' identities. With Housewives, Olympians, Survivor legends, and pop culture icons all vying for $250,000, alliances shatter and no one is safe.",
+    "episodes": 11,
+    "status": "Airing",
+    "similar_show_ids": [2, 3, 7],
+    "image": {
+      "url": "https://assets.newsweek.com/wp-content/uploads/2025/11/nup_203278_00001-1.jpg?w=1600&quality=80&webp=1",
+      "alt": "Official promotional poster for The Traitors Season 4 on Peacock"
     }
-  ]
+  },
+  {
+    "id": 2,
+    "title": "Survivor",
+    "season": 46,
+    "network": "CBS",
+    "year": 2024,
+    "premiere_date": "February 28, 2024",
+    "host": "Jeff Probst",
+    "notable_cast": [
+      { "name": "Kenzie Petty", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Kenzie+Petty&rounded=true&size=128&background=f4a261&color=fff" },
+      { "name": "Charlie Davis", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Charlie+Davis&rounded=true&size=128&background=2a9d8f&color=fff" },
+      { "name": "Maria Shrime Gonzalez", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Maria+Gonzalez&rounded=true&size=128&background=e76f51&color=fff" },
+      { "name": "Q Burdette", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Q+Burdette&rounded=true&size=128&background=264653&color=fff" }
+    ],
+    "rating": 4,
+    "genre": ["competition", "strategy", "survival"],
+    "summary": "One of the longest-running reality competition shows in television history, Survivor drops a new group of castaways on a remote island where they must outwit, outplay, and outlast one another to claim the $1 million prize. Season 46 returns to the iconic Fijian islands, pushing contestants to their physical and mental limits through intense tribal challenges, blindsides, and social manipulation. Alliances shift constantly as players navigate the game's signature twists and tribal council eliminations.",
+    "episodes": 13,
+    "status": "Completed",
+    "similar_show_ids": [1, 3, 5],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/96/Survivor46logo.png",
+      "alt": "The Survivor Season 46 logo"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Big Brother",
+    "season": 26,
+    "network": "CBS",
+    "year": 2024,
+    "premiere_date": "July 17, 2024",
+    "host": "Julie Chen Moonves",
+    "notable_cast": [
+      { "name": "Chelsie Baham", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Chelsie+Baham&rounded=true&size=128&background=9b5de5&color=fff" },
+      { "name": "Rubina Bernabe", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Rubina+Bernabe&rounded=true&size=128&background=f15bb5&color=fff" },
+      { "name": "Tucker Des Lauriers", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Tucker+Des+Lauriers&rounded=true&size=128&background=00bbf9&color=fff" },
+      { "name": "Makensy Manbeck", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Makensy+Manbeck&rounded=true&size=128&background=fee440&color=333" }
+    ],
+    "rating": 4,
+    "genre": ["competition", "strategy", "social experiment"],
+    "summary": "Big Brother places a group of strangers together in a custom-built house outfitted with cameras in every room, broadcasting their every move 24/7. Contestants compete in Head of Household and Power of Veto competitions to gain safety and control nominations, while forming strategic alliances and social bonds. Each week, houseguests vote one of their own out of the house, until a final two or three face the jury for the $750,000 prize. Season 26 introduced an AI twist called 'AI Arena' that dramatically changed the power structure.",
+    "episodes": 38,
+    "status": "Completed",
+    "similar_show_ids": [1, 2, 7],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Big_Brother_Season_26.jpg",
+      "alt": "The Big Brother Season 26 logo"
+    }
+  },
+  {
+    "id": 4,
+    "title": "The Real Housewives of New York City",
+    "season": 15,
+    "network": "Bravo",
+    "year": 2023,
+    "premiere_date": "July 16, 2023",
+    "host": "Andy Cohen",
+    "notable_cast": [
+      { "name": "Dorinda Medley", "related_show": "The Traitors", "related_show_id": 1, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Dorinda_Medley_2019_cropped.jpg/440px-Dorinda_Medley_2019_cropped.jpg" },
+      { "name": "Jessel Taank", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Jessel+Taank&rounded=true&size=128&background=e63946&color=fff" },
+      { "name": "Ubah Hassan", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Ubah+Hassan&rounded=true&size=128&background=1d3557&color=fff" },
+      { "name": "Brynn Whitfield", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Brynn+Whitfield&rounded=true&size=128&background=f1faee&color=333" }
+    ],
+    "rating": 3,
+    "genre": ["lifestyle", "drama", "docuseries"],
+    "summary": "The rebooted 15th season of The Real Housewives of New York City follows a fresh ensemble of powerful, stylish New York women navigating friendship, business ventures, romance, and relentless drama across the city's most exclusive social circles. With an entirely new cast introduced for the reboot, viewers follow the women through glitzy events, shocking confrontations, and deeply personal revelations. The season culminates in a no-holds-barred reunion special where past feuds and unresolved conflicts collide.",
+    "episodes": 18,
+    "status": "Completed",
+    "similar_show_ids": [6, 8, 10],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/07/RHONY_Season_15.jpg",
+      "alt": "The Real Housewives of New York City Season 15 promotional image"
+    }
+  },
+  {
+    "id": 5,
+    "title": "The Amazing Race",
+    "season": 36,
+    "network": "CBS",
+    "year": 2024,
+    "premiere_date": "March 13, 2024",
+    "host": "Phil Keoghan",
+    "notable_cast": [
+      { "name": "Derek Xiao", "related_show": "Big Brother", "related_show_id": 3, "image": "https://ui-avatars.com/api/?name=Derek+Xiao&rounded=true&size=128&background=4cc9f0&color=fff" },
+      { "name": "Claire Rehfuss", "related_show": "Big Brother", "related_show_id": 3, "image": "https://ui-avatars.com/api/?name=Claire+Rehfuss&rounded=true&size=128&background=f72585&color=fff" },
+      { "name": "Juan Villa", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Juan+Villa&rounded=true&size=128&background=7209b7&color=fff" },
+      { "name": "Shane Bilek", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Shane+Bilek&rounded=true&size=128&background=3a0ca3&color=fff" }
+    ],
+    "rating": 4,
+    "genre": ["competition", "travel", "adventure"],
+    "summary": "Teams of two race across the globe, navigating foreign cultures, languages, and landscapes while completing physically demanding and mentally taxing challenges at each pit stop. The last team to check in at each leg risks elimination, while Express Passes and Speed Bumps add strategic layers to the competition. Season 36 takes racers through stunning destinations across four continents, testing relationships and individual resilience in equal measure. The first team to reach the final mat wins $1 million.",
+    "episodes": 11,
+    "status": "Completed",
+    "similar_show_ids": [2, 3, 7],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/8d/The_Amazing_Race_Season_36_poster.jpg",
+      "alt": "The Amazing Race Season 36 key art"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Vanderpump Rules",
+    "season": 11,
+    "network": "Bravo",
+    "year": 2024,
+    "premiere_date": "January 30, 2024",
+    "host": "Andy Cohen",
+    "notable_cast": [
+      { "name": "Tom Sandoval", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Tom+Sandoval&rounded=true&size=128&background=c77dff&color=fff" },
+      { "name": "Ariana Madix", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Ariana+Madix&rounded=true&size=128&background=e0aaff&color=333" },
+      { "name": "Katie Maloney", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Katie+Maloney&rounded=true&size=128&background=7b2d8b&color=fff" },
+      { "name": "Scheana Shay", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Scheana+Shay&rounded=true&size=128&background=ff6b6b&color=fff" }
+    ],
+    "rating": 4,
+    "genre": ["lifestyle", "drama", "docuseries"],
+    "summary": "Set in the glitzy world of Lisa Vanderpump's West Hollywood restaurant empire, Vanderpump Rules follows the dramatic personal and professional lives of the SUR restaurant staff. Season 11 picks up in the aftermath of the explosive 'Scandoval' affair storyline that took over pop culture, continuing to follow Tom Sandoval and Ariana Madix's post-breakup dynamic alongside their group of longtime friends. New cast additions inject fresh drama as the veterans attempt to rebuild — or burn down — their relationships.",
+    "episodes": 12,
+    "status": "Completed",
+    "similar_show_ids": [4, 8, 10],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/79/Vanderpump_Rules_title_card.jpg",
+      "alt": "The Vanderpump Rules Season 11 promotional poster"
+    }
+  },
+  {
+    "id": 7,
+    "title": "The Mole",
+    "season": 2,
+    "network": "Netflix",
+    "year": 2024,
+    "premiere_date": "March 8, 2024",
+    "host": "Alex Wagner",
+    "notable_cast": [
+      { "name": "Avori Henderson", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Avori+Henderson&rounded=true&size=128&background=06d6a0&color=fff" },
+      { "name": "Casey Walker", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Casey+Walker&rounded=true&size=128&background=118ab2&color=fff" },
+      { "name": "Greg Shapiro", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Greg+Shapiro&rounded=true&size=128&background=073b4c&color=fff" },
+      { "name": "Melissa Roth", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Melissa+Roth&rounded=true&size=128&background=ef476f&color=fff" }
+    ],
+    "rating": 4,
+    "genre": ["competition", "mystery", "strategy"],
+    "summary": "The Mole is a gripping mystery-competition hybrid in which contestants work together on missions to build a group prize pot — but one player secretly sabotages the group as 'The Mole.' Players must gather clues, suspect their teammates, and correctly identify The Mole to avoid elimination and ultimately win the prize. Netflix's revival of the classic early-2000s format brings back the paranoia-fueled gameplay with an updated cast of civilians navigating stunning international locations. Every alliance is suspect, and anyone could be deceiving the group.",
+    "episodes": 10,
+    "status": "Completed",
+    "similar_show_ids": [1, 2, 3],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Mole_2024_Netflix_poster.jpg",
+      "alt": "Netflix's The Mole Season 2 promotional image"
+    }
+  },
+  {
+    "id": 8,
+    "title": "The Real Housewives of Atlanta",
+    "season": 16,
+    "network": "Bravo",
+    "year": 2024,
+    "premiere_date": "May 5, 2024",
+    "host": "Andy Cohen",
+    "notable_cast": [
+      { "name": "Porsha Williams", "related_show": "The Traitors", "related_show_id": 1, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Porsha_Williams_2014.jpg/440px-Porsha_Williams_2014.jpg" },
+      { "name": "Kenya Moore", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Kenya+Moore&rounded=true&size=128&background=b5179e&color=fff" },
+      { "name": "Kandi Burruss", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Kandi+Burruss&rounded=true&size=128&background=7209b7&color=fff" },
+      { "name": "Marlo Hampton", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Marlo+Hampton&rounded=true&size=128&background=480ca8&color=fff" }
+    ],
+    "rating": 3,
+    "genre": ["lifestyle", "drama", "docuseries"],
+    "summary": "The Real Housewives of Atlanta follows a group of fiercely independent and fabulously wealthy women living their best lives — and worst fights — in the heart of Atlanta. Season 16 reunites legacy cast members with fresh faces, delivering a season full of lavish parties, business drama, romantic entanglements, and the show's trademark explosive confrontations. Personal revelations and long-held grudges explode across both dramatic girls' trips and the iconic multi-part reunion hosted by Andy Cohen.",
+    "episodes": 20,
+    "status": "Completed",
+    "similar_show_ids": [4, 6, 10],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/97/The_Real_Housewives_of_Atlanta_Season_16.jpg",
+      "alt": "The Real Housewives of Atlanta Season 16 cast photo"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Love Is Blind",
+    "season": 7,
+    "network": "Netflix",
+    "year": 2024,
+    "premiere_date": "October 2, 2024",
+    "host": "Nick Lachey & Vanessa Lachey",
+    "notable_cast": [
+      { "name": "Hannah Jiles", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Hannah+Jiles&rounded=true&size=128&background=ff6b6b&color=fff" },
+      { "name": "Nick Dorka", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Nick+Dorka&rounded=true&size=128&background=4ecdc4&color=fff" },
+      { "name": "Ramses Prashad", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Ramses+Prashad&rounded=true&size=128&background=45b7d1&color=fff" },
+      { "name": "Taylor Krause", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Taylor+Krause&rounded=true&size=128&background=fd79a8&color=fff" }
+    ],
+    "rating": 4,
+    "genre": ["romance", "social experiment", "competition"],
+    "summary": "Love Is Blind poses a radical question: can you fall in love with someone you've never seen? Contestants meet and date in isolated pods where they can only hear — never see — one another, and must decide whether to get engaged before ever laying eyes on their partner. Season 7 returns to Washington D.C., following couples as they navigate the real world together after engagement, meeting each other's families, and ultimately deciding at the altar whether to say 'I do' or walk away. Emotions run high as love, doubt, and social pressures collide.",
+    "episodes": 11,
+    "status": "Completed",
+    "similar_show_ids": [4, 6, 10],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4f/Love_Is_Blind_Season_7.jpg",
+      "alt": "Love Is Blind Season 7 promotional image"
+    }
+  },
+  {
+    "id": 10,
+    "title": "The Real Housewives of Dubai",
+    "season": 2,
+    "network": "Bravo",
+    "year": 2024,
+    "premiere_date": "June 2, 2024",
+    "host": "Andy Cohen",
+    "notable_cast": [
+      { "name": "Caroline Stanbury", "related_show": "The Traitors", "related_show_id": 1, "image": "https://ui-avatars.com/api/?name=Caroline+Stanbury&rounded=true&size=128&background=277da1&color=fff" },
+      { "name": "Chanel Ayan", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Chanel+Ayan&rounded=true&size=128&background=f9c74f&color=333" },
+      { "name": "Nina Ali", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Nina+Ali&rounded=true&size=128&background=43aa8b&color=fff" },
+      { "name": "Lesa Milan", "related_show": null, "related_show_id": null, "image": "https://ui-avatars.com/api/?name=Lesa+Milan&rounded=true&size=128&background=577590&color=fff" }
+    ],
+    "rating": 3,
+    "genre": ["lifestyle", "drama", "docuseries"],
+    "summary": "The Real Housewives of Dubai brings the iconic Housewives franchise to the world's most opulent city, following an international ensemble of powerhouse women who have made Dubai their home. Season 2 ramps up the glitz and drama, with the cast jetting between jaw-dropping mansions, world-class events, and exotic international destinations. Supermodel Chanel Ayan leads a cast that blends fierce ambition with genuine friendship — and bitter rivalries — against the backdrop of Dubai's extraordinary skyline and ultra-luxury lifestyle.",
+    "episodes": 14,
+    "status": "Completed",
+    "similar_show_ids": [4, 6, 8],
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/74/Real_Housewives_of_Dubai_Season_2.jpg",
+      "alt": "The Real Housewives of Dubai Season 2 cast"
+    }
+  }
+]

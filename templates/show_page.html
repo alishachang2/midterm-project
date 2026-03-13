@@ -1,0 +1,37 @@
+ {% extends 'layout.html' %}
+
+ {% block title %} Show Page {% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+
+  <!-- Title -->
+  <h1 class="fw-bold p-2 d-inline-block mb-3">{{ show.title }}</h1>
+
+  <div class="row">
+    <!-- Left: Image -->
+    <div class="col-md-6">
+      <img src="{{ show.image.url }}" alt="{{ show.image.alt }}" class="img-fluid rounded">
+    </div>
+
+    <!-- Right: Rating + Summary -->
+    <div class="col-md-6">
+      <p id="rating" class="fs-3"></p>
+      <p class="fw-bold">SUMMARY</p>
+      <p class="text-muted">{{ show.summary }}</p>
+    </div>
+  </div>
+
+  <!-- Cast below image and summary -->
+  <p class="fw-bold mt-4 mb-3 text-uppercase text-muted small">Cast Members</p>
+  <div class="row row-cols-4 g-3" id="cast-row"></div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const showData = {{ show | tojson }};
+</script>
+<script src="/static/show_page.js"></script>
+{% endblock %}
