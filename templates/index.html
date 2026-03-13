@@ -1,12 +1,21 @@
- % extends "layout.html" %
+ {% extends 'layout.html' %}
 
- {% block title %} Main Page {% endblock %}
+ {% block title %} Main Page {% endblock title %}
 
  {% block content %}
  <h1>Hottest New Reality Shows</h1>
- <div class="row">
-    <div class="col" id="hot-show-1">show 1</div>
-    <div class="col" id="hot-show-2">show 2</div>
-    <div class="col" id="hot-show-3">show 3</div>
+ <div class="container-fluid">
+    <div class="row" id="show-row"></div>
  </div>
  {% endblock %}
+
+{% block scripts %}
+<script>
+ const showData = {{ shows | tojson }};
+ </script>
+ <script src="/static/index.js"></script>
+{% endblock %}
+
+
+
+

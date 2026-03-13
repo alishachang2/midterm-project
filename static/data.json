@@ -1,5 +1,4 @@
-{
-  "reality_tv_shows": [
+[
     {
       "id": 1,
       "title": "The Traitors",
@@ -28,7 +27,7 @@
       "status": "Airing",
       "similar_show_ids": [2, 3, 7],
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/The_Traitors_US_S4_poster.jpg",
+        "url": "https://assets.newsweek.com/wp-content/uploads/2025/11/nup_203278_00001-1.jpg?w=1600&quality=80&webp=1",
         "alt": "Official promotional poster for The Traitors Season 4 on Peacock"
       }
     },
@@ -54,7 +53,7 @@
       "status": "Completed",
       "similar_show_ids": [1, 3, 5],
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/9/96/Survivor46logo.png",
+        "url": "https://i.ytimg.com/vi/kzYf25mDlwk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmfdNF2Eg0QiSls0O2uBI3o-X3Zw",
         "alt": "The Survivor Season 46 logo"
       }
     },
@@ -80,7 +79,7 @@
       "status": "Completed",
       "similar_show_ids": [1, 2, 7],
       "image": {
-        "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Big_Brother_Season_26.jpg",
+        "url": "https://wwwimage-us.pplusstatic.com/base/files/seo/31/09/97/d4484965-5bc1-4010-8bc0-9c8b1abce928.jpg?format=webp",
         "alt": "The Big Brother Season 26 logo"
       }
     },
@@ -272,4 +271,3 @@
       }
     }
   ]
-}

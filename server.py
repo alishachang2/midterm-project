@@ -21,8 +21,9 @@ with open(filename) as shows_data:
 #     global shows
 #     return render_template('shows.html', shows=shows)
 
+@app.route("/")
 def home():
-    return render_template('index.html')
+    return render_template('index.html', shows=shows)
 
 if __name__ == "__main__":
     app.run(debug=True)
