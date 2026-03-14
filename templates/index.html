@@ -1,21 +1,37 @@
- {% extends 'layout.html' %}
+{% extends 'layout.html' %}
+{% block title %}Home — Reality TV Central{% endblock %}
 
- {% block title %} Main Page {% endblock title %}
+{% block content %}
 
- {% block content %}
-<div class="container mt-4">  
-<h1 class="mb-3">Hottest New Reality Shows</h1>
-<div class="row g-3" id="show-row"></div>
-</div>
+<!-- Hero Section -->
+<section class="rt-hero" aria-label="Site introduction">
+  <div class="rt-hero__content">
+    <p class="rt-hero__eyebrow">Reality TV Central</p>
+    <h1 class="rt-hero__title">Drama.<br><span>Tears.</span><br>Must-See TV.</h1>
+    <p class="rt-hero__desc">
+      Your ultimate guide to the hottest reality shows on air — ranked, rated,
+      and ready to binge. From cutthroat competitions to social experiments,
+      we've watched it all.
+    </p>
+    <span class="rt-hero__badge" role="status">
+      <span class="rt-hero__dot" aria-hidden="true"></span>
+      New shows added weekly
+    </span>
+  </div>
+</section>
+
+<!-- Cards Section -->
+<section class="rt-section" aria-labelledby="trending-heading">
+  <div class="rt-section__header">
+    <h2 id="trending-heading" class="rt-section__title">Trending Now</h2>
+    <span class="rt-section__label" aria-hidden="true">Click to explore</span>
+  </div>
+  <div class="row g-3" id="show-row" role="list"></div>
+</section>
+
 {% endblock %}
 
 {% block scripts %}
-<script>
- const showData = {{ shows | tojson }};
- </script>
- <script src="/static/index.js"></script>
+<script>const showData = {{ shows | tojson }};</script>
+<script src="/static/index.js"></script>
 {% endblock %}
-
-
-
-

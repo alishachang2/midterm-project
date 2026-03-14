@@ -1,117 +1,131 @@
 {% extends 'layout.html' %}
-
-{% block title %}Add Show{% endblock %}
+{% block title %}Add Show — Reality TV{% endblock %}
 
 {% block content %}
-<div class="container mt-4" style="max-width:600px;">
+<div class="container mt-5" style="max-width:640px;">
 
-    <h2 class="mb-4">Add New Show</h2>
+  <!-- Header -->
+  <h1 style="font-family:'Cormorant Garamond',serif; font-size:2.8rem; font-weight:600; color:#1a1610; margin-bottom:0.5rem;">
+    Add New Show
+  </h1>
+  <div style="height:1px; background:linear-gradient(90deg,#c9a84c,transparent); margin-bottom:2rem;"></div>
 
-    <!-- Success message - hidden by default -->
-    <div id="success-msg" class="alert alert-success d-none">
-        New item successfully created! <a id="see-it-link" href="#">See it here &rarr;</a>
+  <!-- Success message -->
+  <div id="success-msg" class="d-none mb-3"
+       style="background:#f5f0e8; border:1px solid #c9a84c; border-radius:2px; padding:1rem 1.25rem; font-size:0.875rem; color:#4a4030;">
+    Show successfully added!
+    <a id="see-it-link" href="#"
+       style="color:#c9a84c; text-decoration:none; font-weight:500; margin-left:6px;">
+      See it here →
+    </a>
+  </div>
+
+  <form id="add-form">
+
+    <!-- Title -->
+    <div class="mb-3">
+      <label class="form-label"
+             style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Title *
+      </label>
+      <input type="text" id="title" class="form-control rt-input" placeholder="e.g. Survivor">
+      <div class="invalid-feedback" id="title-error"></div>
     </div>
 
-    <form id="add-form">
-        <div class="mb-3">
-            <label class="form-label">Title *</label>
-            <input type="text" id="title" class="form-control" placeholder="e.g. Survivor">
-            <div class="invalid-feedback" id="title-error"></div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Network *</label>
-            <input type="text" id="network" class="form-control" placeholder="e.g. CBS">
-            <div class="invalid-feedback" id="network-error"></div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Host *</label>
-            <input type="text" id="host" class="form-control" placeholder="e.g. Jeff Probst">
-            <div class="invalid-feedback" id="host-error"></div>
-        </div>
-        <div class="row">
-            <div class="col mb-3">
-                <label class="form-label">Season *</label>
-                <input type="number" id="season" class="form-control" placeholder="e.g. 46">
-                <div class="invalid-feedback" id="season-error"></div>
-            </div>
-            <div class="col mb-3">
-                <label class="form-label">Year *</label>
-                <input type="number" id="year" class="form-control" placeholder="e.g. 2024">
-                <div class="invalid-feedback" id="year-error"></div>
-            </div>
-            <div class="col mb-3">
-                <label class="form-label">Rating (1-5) *</label>
-                <input type="number" id="rating" class="form-control" min="1" max="5" placeholder="e.g. 4">
-                <div class="invalid-feedback" id="rating-error"></div>
-            </div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Genre <small class="text-muted">(comma separated)</small></label>
-            <input type="text" id="genre" class="form-control" placeholder="e.g. competition, strategy">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Summary *</label>
-            <textarea id="summary" class="form-control" rows="3" placeholder="Brief description..."></textarea>
-            <div class="invalid-feedback" id="summary-error"></div>
-        </div>
-        <div class="mb-4">
-            <label class="form-label">Image URL</label>
-            <input type="text" id="image_url" class="form-control" placeholder="https://...">
-        </div>
-        <button type="button" id="submit-btn" class="btn btn-dark">Submit</button>
-    </form>
+    <!-- Network -->
+    <div class="mb-3">
+      <label class="form-label"
+             style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Network *
+      </label>
+      <input type="text" id="network" class="form-control rt-input" placeholder="e.g. CBS">
+      <div class="invalid-feedback" id="network-error"></div>
+    </div>
 
+    <!-- Host -->
+    <div class="mb-3">
+      <label class="form-label"
+             style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Host *
+      </label>
+      <input type="text" id="host" class="form-control rt-input" placeholder="e.g. Jeff Probst">
+      <div class="invalid-feedback" id="host-error"></div>
+    </div>
+
+    <!-- Season, Year, and Rating -->
+    <div class="row">
+      <div class="col mb-3">
+        <label class="form-label"
+               style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+          Season *
+        </label>
+        <input type="number" id="season" class="form-control rt-input" placeholder="e.g. 46">
+        <div class="invalid-feedback" id="season-error"></div>
+      </div>
+      <div class="col mb-3">
+        <label class="form-label"
+               style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+          Year *
+        </label>
+        <input type="number" id="year" class="form-control rt-input" placeholder="e.g. 2024">
+        <div class="invalid-feedback" id="year-error"></div>
+      </div>
+      <div class="col mb-3">
+        <label class="form-label"
+               style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+          Rating (1–5) *
+        </label>
+        <input type="number" id="rating" class="form-control rt-input" min="1" max="5" placeholder="e.g. 4">
+        <div class="invalid-feedback" id="rating-error"></div>
+      </div>
+    </div>
+
+    <!-- Genre -->
+    <div class="mb-3">
+      <label class="form-label"
+             style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Genre
+        <span style="font-size:0.6rem; color:#c9c0a8; margin-left:6px; text-transform:none; letter-spacing:0;">
+          comma separated
+        </span>
+      </label>
+      <input type="text" id="genre" class="form-control rt-input" placeholder="e.g. competition, strategy">
+    </div>
+
+    <!-- Summary -->
+    <div class="mb-3">
+      <label class="form-label"
+             style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Summary *
+      </label>
+      <textarea id="summary" class="form-control rt-input" rows="4"
+                placeholder="Brief description..."></textarea>
+      <div class="invalid-feedback" id="summary-error"></div>
+    </div>
+
+    <!-- Image URL -->
+    <div class="mb-4">
+      <label class="form-label"
+             style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Image URL
+      </label>
+      <input type="text" id="image_url" class="form-control rt-input" placeholder="https://...">
+    </div>
+
+    <!-- Submit -->
+    <button type="button" id="submit-btn"
+            style="background:#c9a84c; color:#1a1610; border:none; border-radius:2px;
+                   font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase;
+                   padding:12px 32px; cursor:pointer; transition:background 0.2s;"
+            onmouseover="this.style.background='#e0bc62'"
+            onmouseout="this.style.background='#c9a84c'">
+      Submit
+    </button>
+
+  </form>
 </div>
 {% endblock %}
 
 {% block scripts %}
-<script>
-    $('#submit-btn').on('click', function() {
-
-        // clear previous errors
-        $('.form-control').removeClass('is-invalid');
-        $('#success-msg').addClass('d-none');
-
-        // store form values in a javascript object (from lecture)
-        var showObject = {
-            title: $('#title').val(),
-            network: $('#network').val(),
-            host: $('#host').val(),
-            season: $('#season').val(),
-            year: $('#year').val(),
-            rating: $('#rating').val(),
-            genre: $('#genre').val(),
-            summary: $('#summary').val(),
-            image_url: $('#image_url').val()
-        };
-
-        // use $.ajax to POST data to the server (from lecture)
-        $.ajax({
-            type: 'POST',
-            url: '/add_show',
-            data: JSON.stringify(showObject),
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            success: function(result) {
-                // show success message with link to new show
-                $('#see-it-link').attr('href', '/show/' + result.id);
-                $('#success-msg').removeClass('d-none');
-
-                // clear the form and focus first field
-                $('#add-form')[0].reset();
-                $('#title').focus();
-
-                // scroll to top
-                window.scrollTo(0, 0);
-            },
-            error: function(request, status, error) {
-                var errors = request.responseJSON.errors;
-                Object.keys(errors).forEach(function(field) {
-                    $('#' + field).addClass('is-invalid');
-                    $('#' + field + '-error').text(errors[field]);
-                });
-            }
-        });
-    });
-</script>
+<script src="{{ url_for('static', filename='add.js') }}"></script>
 {% endblock %}

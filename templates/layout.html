@@ -4,34 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Reality TV Show{% endblock %}</title>
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Icons -->
+   
+    <!-- Stylesheets-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar using anchor tag approach (from lecture) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark"
+         style="background: #1a1610; border-bottom: 1px solid #c9a84c;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Reality TV</a>
+            <a class="navbar-brand"
+               style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:600; color:#c9a84c; letter-spacing:0.08em;"
+               href="/"> Reality TV</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Nav links - anchor tag approach -->
                 <div class="navbar-nav me-auto">
-                    <a class="nav-link" href="/">Home</a>
-                    <a class="nav-link" href="/add">+ Add Show</a>
+                    <a class="nav-link"
+                       style="font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:#b8a98a;"
+                       href="/">Home</a>
+                    <a class="nav-link"
+                       style="font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:#b8a98a;"
+                       href="/add">+ Add Show</a>
                 </div>
                 <!-- Search bar -->
-                <form class="d-flex" action="/search" method="GET">
-                    <input class="form-control me-2" type="search" name="q" placeholder="Search shows..."
-                        value="{{ request.args.get('q', '') }}">
-                    <button class="btn btn-outline-success" type="submit">Go</button>
+                <form class="d-flex" action="/search" method="GET" style="gap:0;">
+                    <input
+                        type="search"
+                        name="q"
+                        placeholder="Search shows..."
+                        value="{{ request.args.get('q', '') }}"
+                        style="background:#24201a; border:1px solid #3a3020; border-right:none;
+                               border-radius:2px 0 0 2px; color:#e8dfc8; font-family:'Jost',sans-serif;
+                               font-size:0.8rem; padding:6px 14px; outline:none; width:200px;"
+                        onfocus="this.style.borderColor='#c9a84c'"
+                        onblur="this.style.borderColor='#3a3020'"
+                    >
+                    <button
+                        type="submit"
+                        style="background:#c9a84c; border:none; border-radius:0 2px 2px 0;
+                               color:#1a1610; font-family:'Jost',sans-serif; font-size:0.75rem;
+                               font-weight:500; letter-spacing:0.1em; text-transform:uppercase;
+                               padding:6px 16px; cursor:pointer; transition:background 0.2s;"
+                        onmouseover="this.style.background='#e0bc62'"
+                        onmouseout="this.style.background='#c9a84c'">
+                        Go
+                    </button>
                 </form>
             </div>
         </div>
@@ -40,9 +67,7 @@
     {% block content %}
     {% endblock %}
 
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 

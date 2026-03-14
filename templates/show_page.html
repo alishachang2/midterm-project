@@ -1,44 +1,67 @@
- {% extends 'layout.html' %}
-
- {% block title %} Show Page {% endblock title %}
+{% extends 'layout.html' %}
+{% block title %}{{ show.title }} — Reality TV{% endblock %}
 
 {% block content %}
-<div class="container mt-4">
+<div class="container mt-5">
 
-  <!-- Title -->
-  <h1 class="fw-bold p-2 d-inline-block mb-3">{{ show.title }}</h1>
+  <!-- Category + Title + Edit -->
+  <div class="d-flex justify-content-between align-items-start mb-4">
+    <div>
+      <p style="font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:#c9a84c; margin-bottom:0.6rem; display:flex; align-items:center; gap:10px;">
+        <span style="width:24px; height:1px; background:#c9a84c; opacity:0.6; display:inline-block;"></span>
+        {{ show.genre | join(', ') }}
+      </p>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:600; color:#1a1610; margin:0;">
+        {{ show.title }}
+      </h1>
+    </div>
+    <a href="/edit/{{ show.id }}"
+       style="font-size:0.7rem; letter-spacing:0.16em; text-transform:uppercase; color:#c9a84c; border:1px solid rgba(201,168,76,0.4); padding:8px 18px; border-radius:2px; text-decoration:none; flex-shrink:0; margin-top:4px;">
+      Edit Show
+    </a>
+  </div>
 
-  <div class="row">
+  <!-- Gold rule -->
+  <div style="height:1px; background:linear-gradient(90deg,#c9a84c,transparent); margin-bottom:2rem;"></div>
+
+  <div class="row g-4 align-items-stretch">
     <!-- Left: Image -->
     <div class="col-md-6">
-  <div style="max-width:600px;">
-    <img
-      src="{{ show.image.url }}"
-      alt="{{ show.image.alt }}"
-      class="img-fluid rounded"
-      style="width:100%; height:338px; object-fit:cover;"
-    >
-  </div>
-</div>
+      <img
+        src="{{ show.image.url }}"
+        alt="{{ show.image.alt }}"
+        class="img-fluid"
+        style="width:100%; height:100%; object-fit:cover; border-radius:2px; border:1px solid #e8dfc8;"
+      >
+    </div>
 
     <!-- Right: Rating + Summary -->
-    <div class="col-md-6">
-      <p id="rating" class="fs-3"></p>
-      <p class="fw-bold">SUMMARY</p>
-      <p class="text-muted">{{ show.summary }}</p>
+    <div class="col-md-6 d-flex flex-column">
+      <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b8a070; margin-bottom:0.5rem;">
+        Rating
+      </p>
+      <p id="rating" class="fs-3 mb-4"></p>
+
+      <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b8a070; margin-bottom:0.75rem;">
+        Summary
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1rem; color:#4a4030; line-height:1.85;">
+        {{ show.summary }}
+      </p>
     </div>
   </div>
 
-  <!-- Cast below image and summary -->
-  <p class="fw-bold mt-4 mb-3 text-uppercase text-muted small">Cast Members</p>
-  <div class="row row-cols-4 g-3" id="cast-row"></div>
+  <!-- Cast -->
+  <p style="font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color:#b8a070; margin-top:3rem; margin-bottom:1.25rem; display:flex; align-items:center; gap:12px;">
+    Cast Members
+    <span style="flex:1; height:1px; background:#e8dfc8; display:inline-block;"></span>
+  </p>
+  <div class="row row-cols-4 g-3 mb-5" id="cast-row"></div>
 
 </div>
 {% endblock %}
 
 {% block scripts %}
-<script>
-  const showData = {{ show | tojson }};
-</script>
-<script src="/static/show_page.js"></script>
+<script>const showData = {{ show | tojson }};</script>
+<script src="{{ url_for('static', filename='show_page.js') }}"></script>
 {% endblock %}

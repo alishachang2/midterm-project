@@ -1,117 +1,100 @@
 {% extends 'layout.html' %}
-
-{% block title %}Edit {{ show.title }}{% endblock %}
+{% block title %}Edit {{ show.title }} — Reality TV{% endblock %}
 
 {% block content %}
-<div class="container mt-4" style="max-width:600px;">
+<div class="container mt-5" style="max-width:640px;">
 
-    <h2 class="mb-4">Edit: {{ show.title }}</h2>
+  <!-- Header -->
+  <p style="font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:#c9a84c; margin-bottom:0.6rem; display:flex; align-items:center; gap:10px;">
+    <span style="width:24px; height:1px; background:#c9a84c; opacity:0.6; display:inline-block;"></span>
+    Editing
+  </p>
+  <h1 style="font-family:'Cormorant Garamond',serif; font-size:2.8rem; font-weight:600; color:#1a1610; margin-bottom:0.5rem;">
+    {{ show.title }}
+  </h1>
+  <div style="height:1px; background:linear-gradient(90deg,#c9a84c,transparent); margin-bottom:2rem;"></div>
 
-    <form id="edit-form">
-        <div class="mb-3">
-            <label class="form-label">Title *</label>
-            <input type="text" id="title" class="form-control" value="{{ show.title }}">
-            <div class="invalid-feedback" id="title-error"></div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Network *</label>
-            <input type="text" id="network" class="form-control" value="{{ show.network }}">
-            <div class="invalid-feedback" id="network-error"></div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Host *</label>
-            <input type="text" id="host" class="form-control" value="{{ show.host }}">
-            <div class="invalid-feedback" id="host-error"></div>
-        </div>
-        <div class="row">
-            <div class="col mb-3">
-                <label class="form-label">Season *</label>
-                <input type="number" id="season" class="form-control" value="{{ show.season }}">
-                <div class="invalid-feedback" id="season-error"></div>
-            </div>
-            <div class="col mb-3">
-                <label class="form-label">Year *</label>
-                <input type="number" id="year" class="form-control" value="{{ show.year }}">
-                <div class="invalid-feedback" id="year-error"></div>
-            </div>
-            <div class="col mb-3">
-                <label class="form-label">Rating (1-5) *</label>
-                <input type="number" id="rating" class="form-control" min="1" max="5" value="{{ show.rating }}">
-                <div class="invalid-feedback" id="rating-error"></div>
-            </div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Genre <small class="text-muted">(comma separated)</small></label>
-            <input type="text" id="genre" class="form-control" value="{{ show.genre | join(', ') }}">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Summary *</label>
-            <textarea id="summary" class="form-control" rows="3">{{ show.summary }}</textarea>
-            <div class="invalid-feedback" id="summary-error"></div>
-        </div>
-        <div class="mb-4">
-            <label class="form-label">Image URL</label>
-            <input type="text" id="image_url" class="form-control" value="{{ show.image.url }}">
-        </div>
-        <div class="d-flex gap-2">
-            <button type="button" id="submit-btn" class="btn btn-dark">Submit</button>
-            <button type="button" id="discard-btn" class="btn btn-outline-secondary">Discard Changes</button>
-        </div>
-    </form>
+  <form id="edit-form">
 
+    <div class="mb-3">
+      <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Title *</label>
+      <input type="text" id="title" class="form-control rt-input" value="{{ show.title }}">
+      <div class="invalid-feedback" id="title-error"></div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Network *</label>
+      <input type="text" id="network" class="form-control rt-input" value="{{ show.network }}">
+      <div class="invalid-feedback" id="network-error"></div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Host *</label>
+      <input type="text" id="host" class="form-control rt-input" value="{{ show.host }}">
+      <div class="invalid-feedback" id="host-error"></div>
+    </div>
+
+    <div class="row">
+      <div class="col mb-3">
+        <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Season *</label>
+        <input type="number" id="season" class="form-control rt-input" value="{{ show.season }}">
+        <div class="invalid-feedback" id="season-error"></div>
+      </div>
+      <div class="col mb-3">
+        <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Year *</label>
+        <input type="number" id="year" class="form-control rt-input" value="{{ show.year }}">
+        <div class="invalid-feedback" id="year-error"></div>
+      </div>
+      <div class="col mb-3">
+        <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Rating (1–5) *</label>
+        <input type="number" id="rating" class="form-control rt-input" min="1" max="5" value="{{ show.rating }}">
+        <div class="invalid-feedback" id="rating-error"></div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">
+        Genre
+        <span style="font-size:0.6rem; color:#c9c0a8; margin-left:6px; text-transform:none; letter-spacing:0;">comma separated</span>
+      </label>
+      <input type="text" id="genre" class="form-control rt-input" value="{{ show.genre | join(', ') }}">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Summary *</label>
+      <textarea id="summary" class="form-control rt-input" rows="4">{{ show.summary }}</textarea>
+      <div class="invalid-feedback" id="summary-error"></div>
+    </div>
+
+    <div class="mb-4">
+      <label class="form-label" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b8a070;">Image URL</label>
+      <input type="text" id="image_url" class="form-control rt-input" value="{{ show.image.url }}">
+    </div>
+
+    <div class="d-flex gap-2">
+      <button type="button" id="submit-btn"
+              style="background:#c9a84c; color:#1a1610; border:none; border-radius:2px;
+                     font-size:0.72rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase;
+                     padding:12px 32px; cursor:pointer; transition:background 0.2s;"
+              onmouseover="this.style.background='#e0bc62'"
+              onmouseout="this.style.background='#c9a84c'">
+        Save Changes
+      </button>
+      <button type="button" id="discard-btn"
+              style="background:transparent; color:#6b5f48; border:1px solid #e8dfc8; border-radius:2px;
+                     font-size:0.72rem; font-weight:400; letter-spacing:0.16em; text-transform:uppercase;
+                     padding:12px 32px; cursor:pointer; transition:border-color 0.2s, color 0.2s;"
+              onmouseover="this.style.borderColor='#c9a84c'; this.style.color='#c9a84c';"
+              onmouseout="this.style.borderColor='#e8dfc8'; this.style.color='#6b5f48';">
+        Discard Changes
+      </button>
+    </div>
+
+  </form>
 </div>
 {% endblock %}
 
 {% block scripts %}
-<script>
-    // pass show id from server to JS
-    const showId = {{ show.id }};
-
-    // submit button - save data with $.ajax (from lecture)
-    $('#submit-btn').on('click', function() {
-
-        // clear previous errors
-        $('.form-control').removeClass('is-invalid');
-
-        // store values in a javascript object
-        var showObject = {
-            title: $('#title').val(),
-            network: $('#network').val(),
-            host: $('#host').val(),
-            season: $('#season').val(),
-            year: $('#year').val(),
-            rating: $('#rating').val(),
-            genre: $('#genre').val(),
-            summary: $('#summary').val(),
-            image_url: $('#image_url').val()
-        };
-
-        // use $.ajax to POST to the server
-        $.ajax({
-            type: 'POST',
-            url: '/edit_show/' + showId,
-            data: JSON.stringify(showObject),
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            success: function(result) {
-                // redirect to show page after saving
-                window.location.href = '/show/' + showId;
-            },
-            error: function(request, status, error) {
-                var errors = request.responseJSON.errors;
-                Object.keys(errors).forEach(function(field) {
-                    $('#' + field).addClass('is-invalid');
-                    $('#' + field + '-error').text(errors[field]);
-                });
-            }
-        });
-    });
-
-    // discard button - confirm before leaving
-    $('#discard-btn').on('click', function() {
-        if (confirm('Are you sure you want to discard your changes?')) {
-            window.location.href = '/show/' + showId;
-        }
-    });
-</script>
+<script>const showId = {{ show.id }};</script>
+<script src="{{ url_for('static', filename='edit.js') }}"></script>
 {% endblock %}
