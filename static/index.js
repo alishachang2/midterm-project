@@ -12,13 +12,14 @@ $(document).ready(function () {
     col.style.cursor = "pointer"; 
 
     col.innerHTML = `
-      <div class="card">
-        <img src="${top_show.image.url}" alt="${top_show.image.alt}" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">${top_show.title}</h5>
-        </div>
-      </div>
-    `;
+  <div class="card h-100">
+    <img src="${top_show.image.url}" alt="${top_show.image.alt}" 
+      class="card-img-top" style="height: 250px; object-fit: cover;">
+    <div class="card-body">
+      <h5 class="card-title">${top_show.title}</h5>
+    </div>
+  </div>
+`;
 
     col.addEventListener('click', () => {
       window.location.href = `/show/${top_show.id}`; // ✅ navigates to show page

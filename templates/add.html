@@ -1,0 +1,117 @@
+{% extends 'layout.html' %}
+
+{% block title %}Add Show{% endblock %}
+
+{% block content %}
+<div class="container mt-4" style="max-width:600px;">
+
+    <h2 class="mb-4">Add New Show</h2>
+
+    <!-- Success message - hidden by default -->
+    <div id="success-msg" class="alert alert-success d-none">
+        New item successfully created! <a id="see-it-link" href="#">See it here &rarr;</a>
+    </div>
+
+    <form id="add-form">
+        <div class="mb-3">
+            <label class="form-label">Title *</label>
+            <input type="text" id="title" class="form-control" placeholder="e.g. Survivor">
+            <div class="invalid-feedback" id="title-error"></div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Network *</label>
+            <input type="text" id="network" class="form-control" placeholder="e.g. CBS">
+            <div class="invalid-feedback" id="network-error"></div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Host *</label>
+            <input type="text" id="host" class="form-control" placeholder="e.g. Jeff Probst">
+            <div class="invalid-feedback" id="host-error"></div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label class="form-label">Season *</label>
+                <input type="number" id="season" class="form-control" placeholder="e.g. 46">
+                <div class="invalid-feedback" id="season-error"></div>
+            </div>
+            <div class="col mb-3">
+                <label class="form-label">Year *</label>
+                <input type="number" id="year" class="form-control" placeholder="e.g. 2024">
+                <div class="invalid-feedback" id="year-error"></div>
+            </div>
+            <div class="col mb-3">
+                <label class="form-label">Rating (1-5) *</label>
+                <input type="number" id="rating" class="form-control" min="1" max="5" placeholder="e.g. 4">
+                <div class="invalid-feedback" id="rating-error"></div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Genre <small class="text-muted">(comma separated)</small></label>
+            <input type="text" id="genre" class="form-control" placeholder="e.g. competition, strategy">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Summary *</label>
+            <textarea id="summary" class="form-control" rows="3" placeholder="Brief description..."></textarea>
+            <div class="invalid-feedback" id="summary-error"></div>
+        </div>
+        <div class="mb-4">
+            <label class="form-label">Image URL</label>
+            <input type="text" id="image_url" class="form-control" placeholder="https://...">
+        </div>
+        <button type="button" id="submit-btn" class="btn btn-dark">Submit</button>
+    </form>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $('#submit-btn').on('click', function() {
+
+        // clear previous errors
+        $('.form-control').removeClass('is-invalid');
+        $('#success-msg').addClass('d-none');
+
+        // store form values in a javascript object (from lecture)
+        var showObject = {
+            title: $('#title').val(),
+            network: $('#network').val(),
+            host: $('#host').val(),
+            season: $('#season').val(),
+            year: $('#year').val(),
+            rating: $('#rating').val(),
+            genre: $('#genre').val(),
+            summary: $('#summary').val(),
+            image_url: $('#image_url').val()
+        };
+
+        // use $.ajax to POST data to the server (from lecture)
+        $.ajax({
+            type: 'POST',
+            url: '/add_show',
+            data: JSON.stringify(showObject),
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            success: function(result) {
+                // show success message with link to new show
+                $('#see-it-link').attr('href', '/show/' + result.id);
+                $('#success-msg').removeClass('d-none');
+
+                // clear the form and focus first field
+                $('#add-form')[0].reset();
+                $('#title').focus();
+
+                // scroll to top
+                window.scrollTo(0, 0);
+            },
+            error: function(request, status, error) {
+                var errors = request.responseJSON.errors;
+                Object.keys(errors).forEach(function(field) {
+                    $('#' + field).addClass('is-invalid');
+                    $('#' + field + '-error').text(errors[field]);
+                });
+            }
+        });
+    });
+</script>
+{% endblock %}

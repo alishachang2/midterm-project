@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <h2>Search Results</h2>
+
+    {% if query %}
+        {% if count == 0 %}
+            <p>No matches found for <strong>"{{ query }}"</strong>.</p>
+        {% else %}
+            <p>Found <strong>{{ count }}</strong> result{{ 's' if count != 1 else '' }} for <strong>"{{ query }}"</strong></p>
+        {% endif %}
+    {% endif %}
+
+    {% for show in results %}
+    <a href="/show/{{ show.id }}" class="text-decoration-none text-dark">
+        <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-2">
+                    <img src="{{ show.image.url }}" class="img-fluid rounded-start"
+                        style="max-height:100px; object-fit:cover; width:100%;">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="fw-bold">{{ show.title | highlight(query) | safe }}</h5>
+                        <p class="text-muted small mb-1">{{ show.network | highlight(query) | safe }} · {{ show.host | highlight(query) | safe }}</p>
+                        <p class="small mb-0">{{ show.summary[:120] | highlight(query) | safe }}...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+
+</div>
+{% endblock %}

@@ -28,11 +28,11 @@ ratingEl.innerHTML = filledStars + emptyStars;
 
     castEl.innerHTML = `
       <img
-        src="${imageUrl}"
-        alt="${member.name}"
-        width="72" height="72"
-        class="rounded-circle object-fit-cover flex-shrink-0"
-      >
+  src="${imageUrl}"
+  alt="${member.name}"
+  style="width:72px;height:72px;object-fit:cover;object-position:center;border-radius:50%;"
+  class="flex-shrink-0"
+>
       <div>
         ${nameHtml}
         ${relatedShow}
